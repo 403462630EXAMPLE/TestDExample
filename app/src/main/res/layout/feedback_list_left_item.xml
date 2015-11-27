@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:background="@android:color/white"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chat_in"
+        android:gravity="center_vertical"
+        android:maxWidth="250dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="13dp"
+        android:paddingTop="10dp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/ic_chat_item_time"
+        android:drawablePadding="7dp"
+        android:text="2014-12-23 10:20" />
+</RelativeLayout>
