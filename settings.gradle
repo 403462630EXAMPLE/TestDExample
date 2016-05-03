@@ -1,1 +1,1 @@
-include ':app', ':jsBridge', ':data', ':Quotation', ':Tools', ':Provider', ':QuotationProtocol', ':ShareSDK', ':Tracker', ':Notification', ':UninstalledObserver'
+include ':app'
