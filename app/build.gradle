@@ -16,7 +16,7 @@ android {
     buildToolsVersion '22.0.1'
 
     defaultConfig {
-        applicationId "com.dx168.efsmobile"
+        applicationId "com.test"
         minSdkVersion 14
         targetSdkVersion 22
         versionCode 1000001
