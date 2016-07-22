@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="default_bg_color">#eeeef4</color>
+    <color name="title_bar">#946ebb</color>
+    <color name="alpha_title_bar">#5c4575</color>
+    <color name="colorPrimary">#946ebb</color>
+    <color name="colorPrimaryDark">#946ebb</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tab_color">#946ebb</color> <!-- 4个tab 图标及文字，汕头的值为：#1c9e46 -->
+    <!-- Main点缀颜色 -->
+    <color name="main_dress_color">#387c96</color>
+    <color name="divider_color">#9d999b</color>
+    <color name="main_bg_color">#ffffff</color>
+    <color name="main_night_bg_color">#202020</color>
+    <color name="main_night_second_bg_color">#505050</color>
+    <color name="main_second_bg_color">#eeeeee</color>
+    <color name="main_yellow_color">#ffc751</color>
+    <color name="main_gray_color">#cccccc</color>
+    <color name="main_shadow_color">#99cccccc</color>
+    <color name="main_night_shadow_color">#303030</color>
+    <!--mefra-->
+    <color name="monyeyellow">#FFC751</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- ActionBar -->
+    <color name="status_bar_bg_color">#387c96</color>
+    <color name="action_bar_bg_color">#387c96</color>
+    <color name="action_bar_overlay_color">#00505050</color>
+    <color name="action_bar_text_color">#f4f4f4</color>
+    <color name="action_bar_press_text_color">#99f4f4f4</color>
+    <color name="action_bar_item_bg_color">#50000000</color>
+    <!-- Common -->
+    <color name="item_selected_bg_color">#20000000</color>
+    <color name="item_focus_bg_color">#10000000</color>
+    <color name="common_line_color">@color/main_gray_color</color>
+    <color name="lv_divider_color">#cdcdcd</color>
+    <color name="white_p50">#7fffffff</color>
+    <color name="color_white">#ffffff</color>
+    <color name="login_blue">#33A7FF</color>
+    <!-- TextView -->
+    <color name="tv_title_color">#333333</color>
+    <color name="tv_title_night_color">#808080</color>
+    <color name="tv_content_color_normal">#333333</color>
+    <color name="tv_desc_color">#838383</color>
+
+    <color name="btn_gray">#999999</color>
+    <color name="btn_normal">#389c76</color>
+    <color name="btn_pressed">#20389c76</color>
+    <color name="btn_enabled_false">#cbcbcb</color>
+    <color name="btn_enabled_true">#33a7ff</color>
+
+    <color name="gray_lighter">#efeff4</color>
+    <color name="gray_light">#aaaaaa</color>
+    <color name="gray_middle">#666666</color>
+    <color name="gray_dark">#333333</color>
+    <color name="homebtn">#808080</color>
+    <color name="divider_normal">#dddddd</color>
+
+    <!-- Financial理财 -->
+    <color name="financial_white">#ffffff</color>
+    <color name="financial_white_press">#99ffffff</color>
+    <color name="financial_black">#333333</color>
+    <color name="financial_dark_black">#000000</color>
+    <color name="financial_orange">#ffc751</color>
+    <color name="financial_gray">#666666</color>
+    <color name="financial_light_gray">#888888</color>
+    <color name="financial_blue">#6DC0FF</color>
+    <color name="financial_red">#ef473a</color>
+    <color name="financial_line">#dddddd</color>
+    <color name="financial_yellow">#ff9900</color>
+    <color name="financial_purple">#946ebb</color>
+    <color name="financial_purple_press">#99946ebb</color>
+    <color name="financial_disable">#d1d1d1</color>
+    <color name="financial_green">#14bd46</color>
+
+    <!-- me 我的 -->
+    <color name="me_white">#ffffff</color>
+    <color name="me_black">#333333</color>
+    <color name="me_dark_black">#000000</color>
+    <color name="me_red">#ef473a</color>
+    <color name="me_color_bg">#482869</color>
+    <color name="me_gray">#666666</color>
+    <color name="me_light_gray">#888888</color>
+    <color name="me_purple">#946ebb</color>
+    <color name="me_blue">#33a7ff</color>
+    <color name="me_disable">#cccccc</color>
+    <color name="me_press">#f9f9f9</color>
+    <color name="me_border_gray">#cccccc</color>
+    <color name="me_line">#dddddd</color>
+    <color name="me_green">#5eb51b</color>
+    <color name="me_yellow">#ff9900</color>
+    <color name="me_bg_color">#efeff4</color>
+    <color name="me_text_hint_color">#d4d4d4</color>
+    <color name="me_item_bg_gray">#f5f5f5</color>
+    <color name="me_font">#515151</color>
+    <color name="enable_money">#2ab6a4</color>
+    <color name="frozen_money">#eb6c6e</color>
+    <color name="in_money">#ffc751</color>
+    <color name="profit_money">#8064a2</color>
+    <color name="me_divider">#cbcbcb</color>
+    <color name="list_view_divider_coloe">#dddddd</color>
+    <color name="me_get_code">#ffc751</color>
+    <color name="me_dialog_normal">#0b9efb</color>
+
+    <color name="me_item_line">#e3e3e3</color>
+
+    <!--充值-->
+    <color name="recharge_light_gray">#888888</color>
+    <color name="recharge_font_warn">#8C6EBB</color>
+    <color name="recharge_grey_bg">#efeff4</color>
+    <color name="recharge_font_green">#14BD46</color>
+    <color name="recharge_font_black">#333333</color>
+
+<!--注册登录-->
+    <color name="edit_text_login">#ff333333</color>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="签到"
+        app:left_show="text"
+        app:left_text="返回" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/blue">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的积分"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/color_white"
+                />
+
+            <TextView
+                android:id="@+id/sign_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/btn_yellow_text_color" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/sign_strategy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签到攻略"
+            android:textSize="@dimen/font_size_big"
+            android:textColor="@color/color_white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/spacing_tiny"
+            android:layout_marginTop="@dimen/spacing_tiny" />
+        <LinearLayout
+            android:id="@+id/ll_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@mipmap/icon_place_holder">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签到成功，今天已领取"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/color_white"
+                />
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/color_white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/color_white"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/ll_sign"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/font_size_big"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已连签"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/color_white"
+                />
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/color_white"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="天，再连签30天奖65元代金券"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/color_white"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <com.wt.signcalendar.SignCalendarView
+        android:id="@+id/calendar_card_view"
+        android:background="@color/me_white"
+        android:layout_width="match_parent"
+        android:layout_height="360dp" />
+    <!--<RelativeLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<cn.hdmoney.hdy.mvp.ui.SlowViewPager-->
+            <!--android:id="@+id/viewpager_main"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@mipmap/bottom_menu_shadow"-->
+            <!--android:contentDescription="@string/str_empty" />-->
+    <!--</RelativeLayout>-->
+</LinearLayout>

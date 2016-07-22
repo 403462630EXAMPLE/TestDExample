@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_lighter">
+
+    <!--<include
+        android:id="@+id/headview"
+        layout="@layout/fra_invest_headview" />-->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pullrefreshlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray_lighter"
+        android:dividerHeight="0dp"
+        >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="首页"
+        app:left_show="none"
+        />
+</RelativeLayout>

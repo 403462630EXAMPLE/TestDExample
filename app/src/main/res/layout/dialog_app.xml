@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_app_shape"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="84dp"
+        android:padding="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_big"
+                android:textColor="@color/me_dark_black"
+                android:gravity="center"
+                android:text="提交成功"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_middle"
+            android:textColor="@color/me_black"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:gravity="center"
+            android:text="400-962-0400"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/me_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_left_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@drawable/dialog_action_text_color_selector"
+            android:background="@drawable/bg_dialog_app_left_action_selector"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/me_line"/>
+
+        <TextView
+            android:id="@+id/tv_right_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@drawable/dialog_action_text_color_selector"
+            android:background="@drawable/bg_dialog_app_right_action_selector"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="拨打"/>
+    </LinearLayout>
+</LinearLayout>

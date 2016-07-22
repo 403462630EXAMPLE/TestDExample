@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="理财"
+        app:left_text="返回"
+        app:left_show="icon"/>
+
+    <ru.vang.progressswitcher.ProgressWidget
+        android:id="@+id/progress_widget"
+        android:layout_below="@id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:progressViewLayout="@layout/progress_switch_progress"
+        app:emptyViewLayout="@layout/progress_switch_empty">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/title_bar">
+
+            <cn.hdmoney.hdy.view.NestedScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_below="@id/title_bar"
+                android:layout_above="@+id/tv_buy">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/default_bg_color"
+                    android:focusableInTouchMode="true"
+                    android:focusable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/financial_white"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingLeft="15dp">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:textColor="@color/financial_black"
+                                android:textSize="@dimen/font_size_big"
+                                android:text="--"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/tv_name"
+                                android:layout_marginLeft="12dp"
+                                android:src="@mipmap/addprofit"/>
+
+                            <ImageView
+                                android:id="@+id/iv_sell_out"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:visibility="gone"
+                                android:src="@mipmap/ic_sell_out"/>
+                        </RelativeLayout>
+                        
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/financial_line"/>
+                        
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_year_rate_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/font_size_fifteen"
+                                android:textColor="@color/financial_light_gray"
+                                android:layout_alignLeft="@+id/tv_rate_container"
+                                android:paddingLeft="5dp"
+                                android:text="年利率   (%)"/>
+
+                            <LinearLayout
+                                android:id="@+id/tv_rate_container"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal"
+                                android:layout_centerHorizontal="true">
+                                <TextView
+                                    android:id="@+id/tv_year_rate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="90sp"
+                                    android:textColor="@color/financial_yellow"
+                                    android:text="9.0"
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_plus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="24dp"
+                                    android:textColor="@color/financial_yellow"
+                                    android:text="+"
+                                    />
+                                <TextView
+                                    android:id="@+id/tv_addrate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="24dp"
+                                    android:textColor="@color/financial_yellow"
+                                    android:text="0.5"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/financial_line"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="43dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp">
+
+                            <TextView
+                                android:id="@+id/tv_day_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:textSize="@dimen/font_size_fifteen"
+                                android:textColor="@color/financial_light_gray"
+                                android:text="产品期限"/>
+
+                            <TextView
+                                android:id="@+id/tv_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:layout_toRightOf="@+id/tv_day_hint"
+                                android:textSize="@dimen/font_size_fifteen"
+                                android:textColor="@color/financial_yellow"
+                                android:text="-- 天"/>
+
+                            <View
+                                android:id="@+id/line"
+                                android:layout_width="0.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:background="@color/financial_line"/>
+
+                            <TextView
+                                android:id="@+id/tv_unit_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@id/line"
+                                android:layout_marginLeft="13dp"
+                                android:textSize="@dimen/font_size_fifteen"
+                                android:textColor="@color/financial_light_gray"
+                                android:text="投资单位"/>
+
+                            <TextView
+                                android:id="@+id/tv_unit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="12dp"
+                                android:layout_toRightOf="@+id/tv_unit_hint"
+                                android:textSize="@dimen/font_size_fifteen"
+                                android:textColor="@color/financial_yellow"
+                                android:text="-- 元 / 份"/>
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:background="@color/financial_line"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp">
+                            
+                            <cn.hdmoney.hdy.view.HdyProgressView
+                                android:id="@+id/progress_bar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:hdy_progressWidth="6dp"
+                                app:hdy_progress="0"
+                                app:hdy_spotWidth="1.5dp"
+                                app:hdy_progressColor="@color/financial_yellow"/>
+
+                            <TextView
+                                android:id="@+id/tv_surplus_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@id/progress_bar"
+                                android:text="剩余--份"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/financial_white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_detail_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:textColor="@color/financial_black"
+                            android:textSize="@dimen/font_size_middle"
+                            android:text="产品详情"/>
+
+                        <View
+                            android:id="@+id/detail_line"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_below="@id/tv_detail_hint"
+                            android:background="@color/financial_line"/>
+
+                        <TextView
+                            android:id="@+id/tv_bank_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/detail_line"
+                            android:layout_alignLeft="@id/tv_detail_hint"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/financial_light_gray"
+                            android:textSize="@dimen/font_size_small"
+                            android:text="承兑机构"/>
+
+                        <TextView
+                            android:id="@+id/tv_bank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_bank_hint"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/financial_black"
+                            android:textSize="@dimen/font_size_small"
+                            android:text="--"/>
+
+                        <TextView
+                            android:id="@+id/tv_end_date_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_bank_hint"
+                            android:layout_alignLeft="@id/tv_detail_hint"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/financial_light_gray"
+                            android:textSize="@dimen/font_size_small"
+                            android:text="结息日期"/>
+
+                        <TextView
+                            android:id="@+id/tv_end_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_end_date_hint"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/financial_black"
+                            android:textSize="@dimen/font_size_small"
+                            android:text="--"/>
+
+                        <TextView
+                            android:id="@+id/tv_repayment_day_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_end_date"
+                            android:layout_alignLeft="@id/tv_detail_hint"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/financial_light_gray"
+                            android:textSize="@dimen/font_size_small"
+                            android:text="最迟还款日"/>
+
+                        <TextView
+                            android:id="@+id/tv_repayment_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_repayment_day_hint"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/financial_black"
+                            android:textSize="@dimen/font_size_small"
+                            android:text="--"/>
+
+                        <TextView
+                            android:id="@+id/tv_start_date_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_repayment_day_hint"
+                            android:layout_alignLeft="@id/tv_detail_hint"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/financial_light_gray"
+                            android:textSize="@dimen/font_size_small"
+                            android:layout_marginBottom="20dp"
+                            android:text="起息日期"/>
+
+                        <TextView
+                            android:id="@+id/tv_start_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/tv_start_date_hint"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/financial_black"
+                            android:textSize="@dimen/font_size_small"
+                            android:text="--"/>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_recycle_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:orientation="vertical">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tab_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="44dp"
+                            android:background="@color/financial_white"
+                            app:tabSelectedTextColor="@color/financial_purple"
+                            app:tabTextColor="@color/financial_gray"
+                            app:tabMode="fixed"
+                            app:tabGravity="fill"
+                            app:tabIndicatorColor="@color/financial_purple"
+                            app:tabIndicatorHeight="2dp"/>
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/view_page"
+                            android:background="@color/financial_white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </cn.hdmoney.hdy.view.NestedScrollView>
+
+            <TextView
+                android:id="@+id/tv_buy"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_purple_selector"
+                android:textColor="@color/financial_white"
+                android:textSize="@dimen/font_size_middle"
+                android:gravity="center"
+                android:text="立即购买"/>
+        </LinearLayout>
+    </ru.vang.progressswitcher.ProgressWidget>
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleBar">
+        <attr name="bar_title" format="string"/>
+        <attr name="left_icon" format="reference"/>
+        <attr name="left_text" format="string"/>
+        <attr name="right_text" format="string"/>
+        <attr name="right_icon" format="reference"/>
+        <attr name="iv_head" format="reference"/>
+        <attr name="left_show" format="enum">
+            <enum name="icon" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="all" value="3"/>
+            <enum name="none" value="0"/>
+        </attr>
+        <attr name="right_show" format="enum">
+            <enum name="icon" value="1"/>
+            <enum name="text" value="2"/>
+            <enum name="all" value="3"/>
+            <enum name="none" value="0"/>
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="CircleBgView">
+        <attr name="circle_stroke_width" format="dimension"/>
+        <attr name="circle_bg_color" format="color"/>
+        <attr name="circle_fg_color" format="color"/>
+        <attr name="circle_precent" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CuspTextView">
+        <attr name="cusp_width" format="dimension"/>
+        <attr name="cusp_color" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="NumberSettingView">
+        <attr name="unit" format="float" />
+        <attr name="number_min" format="float" />
+        <attr name="number_max" format="float" />
+        <attr name="number_type" format="enum">
+            <enum name="number" value="0"/>
+            <enum name="numberDecimal" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="NavigationTabView">
+        <attr name="tab_left_text" format="string" />
+        <attr name="tab_right_text" format="string" />
+        <attr name="tab_center_text" format="string" />
+        <attr name="tab_left_icon" format="reference" />
+        <attr name="tab_right_icon" format="reference" />
+        <attr name="tab_left_text_color" format="color|reference"/>
+        <attr name="tab_center_text_color" format="color|reference"/>
+        <attr name="tab_right_text_color" format="color|reference"/>
+        <attr name="tab_left_text_size" format="dimension|reference"/>
+        <attr name="tab_center_text_size" format="dimension|reference"/>
+        <attr name="tab_right_text_size" format="dimension|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SpotView">
+        <attr name="spot_color" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="HdyProgressView">
+        <attr name="hdy_progress" format="integer"/>
+        <attr name="hdy_max" format="integer"/>
+        <attr name="hdy_progressWidth" format="dimension"/>
+        <attr name="hdy_spotWidth" format="dimension"/>
+        <attr name="hdy_bgColor" format="color|reference" />
+        <attr name="hdy_progressColor" format="color|reference"/>
+        <attr name="hdy_spotColor" format="color|reference"/>
+    </declare-styleable>
+</resources>

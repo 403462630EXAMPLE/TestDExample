@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="添加银行卡"
+        app:left_show="icon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:background="@color/me_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_normal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:hint="请输入持卡人姓名"
+                    android:textColor="@color/me_black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColorHint="@color/me_text_hint_color"
+                    android:textSize="@dimen/spacing_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/me_divider" />
+
+                <EditText
+                    android:id="@+id/et_idcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_normal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:hint="请输入身份证号"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:inputType="number"
+                    android:textColor="@color/me_black"
+                    android:textColorHint="@color/me_text_hint_color"
+                    android:textSize="@dimen/spacing_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/me_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:background="@color/me_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_bankcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_normal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:hint="请输入银行卡号"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:inputType="number"
+                    android:textColor="@color/me_black"
+                    android:textColorHint="@color/me_text_hint_color"
+                    android:textSize="@dimen/spacing_normal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/me_divider" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/et_bank"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_normal"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@null"
+                        android:hint="请选择开户行"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/me_black"
+                        android:textColorHint="@color/me_black"
+                        android:textSize="@dimen/spacing_normal" />
+
+                    <ImageView
+                        android:id="@+id/down_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="centerInside"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/spacing_normal"
+                        android:src="@mipmap/ic_right" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/me_divider" />
+
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_normal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:hint="请输入银行预留手机号"
+                    android:inputType="phone"
+                    android:textColor="@color/me_black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColorHint="@color/me_text_hint_color"
+                    android:textSize="@dimen/spacing_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/me_divider" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:text="为确保您的账户及资金安全，目前仅支持绑定一张银行卡，\n更绑请联系客服4009 620 400。"
+                android:textColor="@color/btn_gray"
+                android:textSize="@dimen/font_size_ten" />
+
+            <Button
+                android:id="@+id/identify"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:layout_marginRight="@dimen/spacing_normal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:background="@drawable/bg_button_corner_gray"
+                android:text="下一步"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

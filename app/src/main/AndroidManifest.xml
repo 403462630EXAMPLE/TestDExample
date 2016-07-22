@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.hdmoney.hdy">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 相机照片相关权限 -->
+    <application
+        android:name=".app.MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".act.SplashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--android:theme="@style/NoSwipTheme"-->
+        <activity android:name=".act.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".guide.ui.BannerHomeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.RechargeActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait">
+            >
+        </activity>
+        <activity android:name=".act.GetCashActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.BankCardActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.RechargeSucActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".act.ForgetSecretActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.RegistActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".guide.ui.UserGuideActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/GuideTheme">
+        </activity>
+
+        <activity android:name=".act.RegistSuccessActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustNothing"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.BankDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustNothing"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.NewsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.SignRecordActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustNothing"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.GetCashSucActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustNothing"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.BankListActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.FinancialDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.FinancialBuyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity android:name=".act.FinancialBuySuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.UserInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.AccountSettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.UsernameActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.PhoneActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.TradePasswordSettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.TradePasswordOperationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.LoginPasswordOperationActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.PaymentRecordActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.InvestmentRecordActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.MyCouponActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.MyRecommendActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.RewardRecordActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.PaymentCalendarActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.RecommendLinkActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.FeedbackActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.TotalMoneyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.PictureActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".act.DetailAddressActivity"
+            android:screenOrientation="portrait"/>
+        <service android:name=".checkUpdate.DownloadService"/>
+    </application>
+
+</manifest>

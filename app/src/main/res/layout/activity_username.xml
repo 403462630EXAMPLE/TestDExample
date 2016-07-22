@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff5">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="用户名"
+        app:left_text="返回"
+        app:left_show="icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/me_black"
+            android:textSize="@dimen/font_size_fifteen"
+            android:text="当前用户名："/>
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/me_black"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/font_size_twelve"
+            android:text="--"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/me_white"
+        android:textColor="@color/me_black"
+        android:textColorHint="@color/me_text_hint_color"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="@dimen/font_size_middle"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:hint="请设置用户名"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/btn_gray"
+        android:textSize="@dimen/font_size_twelve"
+        android:layout_marginLeft="15dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="9dp"
+        android:text="用户名设置后不可修改，不能数字开头，长度6-16个字符，可使用英文，数字和下划线。"/>
+
+    <TextView
+        android:id="@+id/tv_modify_username"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_round_purple_selector"
+        android:textColor="@color/me_white"
+        android:textSize="@dimen/font_size_big"
+        android:gravity="center"
+        android:text="提交"/>
+</LinearLayout>

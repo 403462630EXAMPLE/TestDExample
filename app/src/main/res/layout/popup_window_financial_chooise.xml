@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_all"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="@dimen/font_size_fifteen"
+            android:textColor="@drawable/text_color_financial_choose_selector"
+            android:background="@drawable/bg_navigation_tab_selector"
+            android:gravity="center"
+            android:text="全部"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/financial_line"/>
+
+        <TextView
+            android:id="@+id/tv_gly"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="@dimen/font_size_fifteen"
+            android:textColor="@drawable/text_color_financial_choose_selector"
+            android:background="@drawable/bg_navigation_tab_selector"
+            android:gravity="center"
+            android:text="高利银"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/financial_line"/>
+
+        <TextView
+            android:id="@+id/tv_wly"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="@dimen/font_size_fifteen"
+            android:textColor="@drawable/text_color_financial_choose_selector"
+            android:background="@drawable/bg_navigation_tab_selector"
+            android:gravity="center"
+            android:text="稳利银"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/financial_line"/>
+
+        <TextView
+            android:id="@+id/tv_hly"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="@dimen/font_size_fifteen"
+            android:visibility="gone"
+            android:textColor="@drawable/text_color_financial_choose_selector"
+            android:background="@drawable/bg_navigation_tab_selector"
+            android:gravity="center"
+            android:text="活利银"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+            android:background="@color/financial_line"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#00ffffff"/>
+</LinearLayout>

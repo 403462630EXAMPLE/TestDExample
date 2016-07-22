@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="haibison.android.lockpattern">
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true">
+        <activity
+            android:name=".LockPatternActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTop"/>
+    </application>
+
+</manifest>

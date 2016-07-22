@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/me_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="推荐链接"
+        app:left_text="返回"
+        app:left_show="icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:textColor="@color/me_black"
+        android:textSize="@dimen/font_size_fifteen"
+        android:text="推荐拿奖励，邀请好友越多，获得的奖励越丰厚"/>
+
+    <ImageView
+        android:id="@+id/iv_qr_code"
+        android:layout_width="187dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="14dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/me_black"
+            android:textSize="@dimen/font_size_fifteen"
+            android:text="推荐码："/>
+
+        <TextView
+            android:id="@+id/tv_recommend_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/me_purple"
+            android:textSize="@dimen/font_size_fifteen"
+            android:text="000191"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:gravity="center"
+        android:textColor="@color/me_gray"
+        android:textSize="@dimen/font_size_small"
+        android:lineSpacingMultiplier="1.3"
+        android:text="好友注册时，在推荐码一栏填写上述推荐码、即为推荐成功或将推荐链接发送至好友，长按复制"/>
+
+    <TextView
+        android:id="@+id/tv_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:gravity="center"
+        android:textColor="#33a7ff"
+        android:textSize="@dimen/font_size_thirteen"
+        android:text="http://www.hdmoney.cn/registerStep1?un=00019"/>
+</LinearLayout>

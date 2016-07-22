@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <!--  <include layout="@layout/include_titlebar" />-->
+    <FrameLayout
+        android:id="@+id/framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        >
+
+        <cn.hdmoney.hdy.mvp.ui.SlowViewPager
+            android:id="@+id/viewpager_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_bg"
+        android:gravity="bottom">
+        <GridView
+            android:id="@+id/gv_menu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/transparent"
+            android:gravity="center"
+            android:numColumns="5" />
+    </RelativeLayout>
+    <!--android:listSelector="@color/blue"-->
+</RelativeLayout>

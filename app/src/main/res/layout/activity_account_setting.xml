@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/default_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="账户设置"
+        app:left_text="返回"
+        app:left_show="icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/me_white"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_username"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/username"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="用户名"
+            app:tab_right_text="hd-1811111222"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/phone"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="手机号码"
+            app:tab_right_text="1811111222"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_bank"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/card"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="银行卡"
+            app:tab_right_text="已绑定"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_trade_password"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/tradesecret"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="交易密码"
+            app:tab_right_text="已设置"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/loginsecret"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="登录密码"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_lock_pattern_password"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/gesturesecret"
+            app:tab_left_text="手势密码">
+
+            <com.zcw.togglebutton.ToggleButton
+                android:id="@+id/toggle_button"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                app:isDefaultOn="true"
+                app:onColor="#5eb51b"
+                app:offColor="#f0eff5"
+                app:spotColor="#ffffff"
+                app:offBorderColor="#f0eff5">
+            </com.zcw.togglebutton.ToggleButton>
+        </cn.hdmoney.hdy.view.NavigationTabView>
+    </LinearLayout>
+</LinearLayout>

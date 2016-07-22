@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/tv_l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/me_black"
+            android:textSize="@dimen/font_size_small"
+            android:text="提现"/>
+
+        <TextView
+            android:id="@+id/tv_l2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_l1"
+            android:textColor="@color/me_gray"
+            android:textSize="@dimen/font_size_thirteen"
+            android:text="金额：2000.00"/>
+
+        <TextView
+            android:id="@+id/tv_r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="#999999"
+            android:textSize="@dimen/font_size_eleven"
+            android:text="成功"/>
+
+        <TextView
+            android:id="@+id/tv_r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tv_r1"
+            android:textColor="@color/me_gray"
+            android:textSize="@dimen/font_size_small"
+            android:text="手续费：0.00"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/me_line"/>
+</LinearLayout>

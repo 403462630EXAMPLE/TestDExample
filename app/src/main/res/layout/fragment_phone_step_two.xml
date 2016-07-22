@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_bg_color"
+    android:orientation="vertical">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="更绑手机号码"
+        app:left_show="icon"
+        app:left_text="返回" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/spacing_normal"
+            android:text="当前手机号码："
+            android:textColor="@color/me_black"
+            android:textSize="@dimen/font_size_fifteen" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/me_black"
+            android:textSize="@dimen/font_size_fifteen" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/me_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入短信验证码"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:singleLine="true"
+                android:textColor="@color/me_black"
+                android:textColorHint="@color/me_text_hint_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/font_size_fifteen" />
+
+            <TextView
+                android:id="@+id/tv_get_code"
+                android:layout_width="116dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_round_get_code"
+                android:gravity="center"
+                android:text="立即获取"
+                android:textColor="@drawable/text_color_get_code"
+                android:textSize="@dimen/font_size_fifteen" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/me_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_new_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入要绑定的手机号码"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:singleLine="true"
+                android:textColor="@color/me_black"
+                android:textColorHint="@color/me_text_hint_color"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="@dimen/font_size_middle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_goto_next"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_round_purple_selector"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="@color/me_white"
+        android:textSize="@dimen/font_size_big" />
+</LinearLayout>

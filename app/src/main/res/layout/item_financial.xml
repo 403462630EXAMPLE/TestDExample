@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:id="@+id/tv_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/financial_black"
+        android:textSize="@dimen/font_size_small"
+        android:text="稳利银21期"/>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/financial_light_gray"
+        android:textSize="@dimen/font_size_small"
+        android:layout_alignLeft="@id/tv_left_text"
+        android:layout_below="@id/tv_left_text"
+        android:layout_marginTop="3dp"
+        android:text="企业担保"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hint"
+        android:layout_alignLeft="@id/tv_hint"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/financial_orange"
+            android:textSize="@dimen/font_size_biggest"
+            android:text="9.00"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/financial_light_gray"
+            android:textSize="@dimen/font_size_least"
+            android:layout_marginTop="5dp"
+            android:text="年利率(%)"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/financial_black"
+            android:textSize="@dimen/font_size_biggest"
+            android:text="13"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/financial_light_gray"
+            android:textSize="@dimen/font_size_least"
+            android:layout_marginTop="5dp"
+            android:text="期限(天)"/>
+    </LinearLayout>
+    
+    <cn.hdmoney.hdy.view.CircleBgView
+        android:id="@+id/circle_bg_view"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/financial_light_gray"
+            android:textSize="@dimen/font_size_least"
+            android:text="剩余(份)"/>
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/financial_orange"
+            android:textSize="@dimen/font_size_least"
+            android:text="794"/>
+    </cn.hdmoney.hdy.view.CircleBgView>
+
+    <cn.hdmoney.hdy.view.CuspTextView
+        android:id="@+id/tv_cusp_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/financial_white"
+        android:text="加息"
+        app:cusp_width="20dp"
+        app:cusp_color="@color/financial_blue"/>
+</RelativeLayout>

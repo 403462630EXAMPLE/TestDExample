@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/me_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="更多"
+        app:left_show="none"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            android:src="@mipmap/ic_logo"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/me_white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_company_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/ic_more_compony"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="公司介绍"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_common_question"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/ic_more_question"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="常见问题"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/ic_more_apply"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="免责申明"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/me_line"/>
+    </LinearLayout>
+
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/me_white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/ic_more_phone"
+            app:tab_left_text="客服电话"
+            app:tab_right_text="400-962-0400"
+            app:tab_right_text_color="@color/me_purple"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/ic_more_suggestion"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="意见反馈"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="49dp"
+            android:background="@color/me_line"/>
+
+        <cn.hdmoney.hdy.view.NavigationTabView
+            android:id="@+id/nt_check_update"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_navigation_tab_selector"
+            app:tab_left_icon="@mipmap/ic_more_update"
+            app:tab_right_icon="@mipmap/ic_right"
+            app:tab_left_text="检查更新"
+            app:tab_right_text="ver 1.0"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/me_line"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+</LinearLayout>

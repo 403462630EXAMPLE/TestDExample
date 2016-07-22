@@ -1,79 +1,142 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'me.tatarka:gradle-retrolambda:2.5.0'
-    }
-}
 apply plugin: 'com.android.application'
-apply plugin: 'me.tatarka.retrolambda'
-apply plugin: 'hugo'
 apply plugin: 'com.neenbedankt.android-apt'
-
 android {
-    compileSdkVersion 22
-    buildToolsVersion '22.0.1'
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.test"
+        applicationId "cn.hdmoney.hdy"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 1000001
-        versionName "0.0.5"
-        // Enabling multidex support.
+        versionCode 1
+        versionName "1.0"
+
         multiDexEnabled true
     }
-
-    packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/NOTICE.txt'
-    }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-    }
-
-    packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/NOTICE.txt'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/services/javax.annotation.processing.Processor'
-    }
-
+//    sourceSets {//目录指向配置
+//
+//        main {
+//
+//            manifest.srcFile 'AndroidManifest.xml'//指定AndroidManifest文件
+//
+//            java.srcDirs = ['src']//指定source目录
+//
+//            resources.srcDirs = ['src']//指定source目录
+//
+//            aidl.srcDirs = ['src']//指定source目录
+//
+//            renderscript.srcDirs = ['src']//指定source目录
+//
+//            res.srcDirs = ['res']//指定资源目录
+//
+//            assets.srcDirs = ['assets']//指定assets目录
+//
+//            jniLibs.srcDirs = ['libs']//指定lib库目录
+//
+//        }
+//
+//        debug.setRoot('build-types/debug')//指定debug模式的路径
+//
+//        release.setRoot('build-types/release')//指定release模式的路径
+//
+//    }
+//    signingConfigs {//签名配置
+//
+//        release {//发布版签名配置
+//
+//            storeFile file("fk.keystore")//密钥文件路径
+//
+//            storePassword "123"//密钥文件密码
+//
+//            keyAlias "fk"//key别名
+//
+//            keyPassword "123"//key密码
+//        }
+//
+//        debug {//debug版签名配置
+//
+//            storeFile file("fk.keystore")
+//
+//            storePassword "123"
+//
+//            keyAlias "fk"
+//
+//            keyPassword "123"
+//
+//        }
+//
+//    }
+//    buildTypes {
+//        release {
+////            混淆开启
+//            minifyEnabled true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.release//设置签名信息
+//        }
+//        debug {//调试
+//
+//            signingConfig signingConfigs.release
+//
+//        }
+//    }
     lintOptions {
+//      lint时候终止错误上报,防止编译的时候莫名的失败
         abortOnError false
-        checkReleaseBuilds false
+
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-}
 
-configurations.all {
-    resolutionStrategy {
-        cacheChangingModulesFor 0, 'seconds'
-    }
-}
-
-repositories {
-    maven { url 'https://github.com/donnfelker/mvn-repo/raw/master/' }
-    mavenCentral()
 }
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.11'
-    compile 'com.android.support:support-v4:22.+'
-    compile 'com.android.support:appcompat-v7:22.+'
-    compile 'com.android.support:design:22.2.1'
-    compile 'com.android.support:cardview-v7:+'
-    compile 'com.android.support:recyclerview-v7:+'
+    testCompile 'junit:junit:4.12'
+    debugCompile 'com.facebook.stetho:stetho:1.3.1'
+    compile 'com.facebook.stetho:stetho-okhttp3:1.3.1'
+//    compile project(':library_viewpagerheader')
+    compile project(':library_pulltorefresh')
+    compile project(':FlycoBanner_Lib')
+    //FlycoDialog
+    compile project(':library_aframework')
+    compile project(':library_mvp')
+    compile project(':superswiperefreshlayout')
+    compile project(':Togglebutton')
+    compile project(':LockPattern')
+    compile project(':CalendarCard')
+    compile project(':fczxing_core')
+    compile project(':LoadMoreRecycleView')
+    compile project(':pickerview')
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+//    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.squareup.dagger:dagger:1.2.5'
+    compile 'com.squareup.dagger:dagger-compiler:1.2.5'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.zhy:okhttputils:2.4.1'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.flyco.dialog:FlycoDialog_Lib:1.2.6@aar'
+    compile 'junit:junit:4.12'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.google.guava:guava:19.0'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.github.drnkn:progress-switcher:1.1.3@aar'
+    compile 'com.sw926.imagefileselector:library:1.0.1'
+    compile 'com.github.chrisbanes:PhotoView:1.2.6'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
 
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.joooonho:selectableroundedimageview:1.0.1'
 }

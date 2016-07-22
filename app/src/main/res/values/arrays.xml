@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="book_detail_action_titles">
+        <item>查看详情</item>
+        <item>删除</item>
+    </string-array>
+
+    <string-array name="main_menu_titles">
+        <item>首页</item>
+        <item>理财</item>
+        <item>发现</item>
+        <item>我的</item>
+        <item>更多</item>
+    </string-array>
+
+    <string-array name="main_menu_icon_n">
+
+        <item>@mipmap/home_2</item>
+        <item>@mipmap/invest_2</item>
+        <item>@mipmap/find_2</item>
+        <item>@mipmap/me_2</item>
+        <item>@mipmap/more_2</item>
+    </string-array>
+
+    <string-array name="main_menu_icon_s">
+        <item>@mipmap/home_1</item>
+        <item>@mipmap/invest_1</item>
+        <item>@mipmap/find_1</item>
+        <item>@mipmap/me_1</item>
+        <item>@mipmap/more_1</item>
+    </string-array>
+    <string-array name="fra_home_img">
+        <item>@mipmap/guide</item>
+        <item>@mipmap/product</item>
+        <item>@mipmap/security</item>
+        <item>@mipmap/operatedata</item>
+
+    </string-array>
+    <string-array name="fra_home_proItem">
+        <item>@mipmap/fra_home_proitem</item>
+        <item>@mipmap/fra_home_proitem</item>
+        <item>@mipmap/fra_home_proitem</item>
+        <item>@mipmap/fra_home_proitem</item>
+
+    </string-array>
+
+    <!-- ReadMenu -->
+    <string-array name="read_menu_titles">
+        <item>夜间</item>
+        <item>设置</item>
+        <item>目录</item>
+        <!--<item>缓存</item>-->
+    </string-array>
+
+
+    <!-- Source -->
+    <string-array name="education">
+        <item>博士</item>
+        <item>硕士</item>
+        <item>本科</item>
+        <item>专科</item>
+        <item>高中</item>
+        <item>其他</item>
+    </string-array>
+
+    <integer-array name="source_value">
+        <item>0</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="pic_types">
+        <item>拍照</item>
+        <item>从相册选择</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+
+    <string-array name="login_types">
+        <item>新浪微博登陆</item>
+        <item>QQ登陆</item>
+    </string-array>
+
+    <string-array name="feedback_types">
+        <item>咨询 </item>
+        <item>投诉</item>
+        <item>建议</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="个人信息"
+        app:left_show="icon"
+        app:left_text="返回"
+        app:right_show="text"
+        app:right_text="保存"/>
+
+    <EditText
+        android:id="@+id/et_detail_address"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/me_white"
+        android:inputType="textMultiLine"
+        android:textSize="@dimen/font_size_fifteen"
+        android:textColor="@color/me_black"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:padding="15dp"
+        android:gravity="top"
+        android:hint="请填写详细地址，街道、小区、门牌号等"/>
+</LinearLayout>

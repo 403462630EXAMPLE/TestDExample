@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        app:bar_title="选择银行"
+        app:left_show="icon"
+        app:left_text="返回"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pullrefreshlistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:divider="@color/gray_lighter"
+        android:background="@color/white"
+        android:dividerHeight="0dp"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

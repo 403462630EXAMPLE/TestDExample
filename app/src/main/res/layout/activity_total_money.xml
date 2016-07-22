@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.hdmoney.hdy.view.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_title="账户总资产"
+            app:left_text="返回"
+            app:left_show="icon"/>
+
+    <ru.vang.progressswitcher.ProgressWidget
+        android:id="@+id/progress_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:progressViewLayout="@layout/progress_switch_progress"
+        app:emptyViewLayout="@layout/progress_switch_total_money_empty">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp">
+
+                <cn.hdmoney.hdy.view.TotalMoneyPieView
+                    android:id="@+id/pie"
+                    android:layout_width="223dp"
+                    android:layout_height="223dp"
+                    android:layout_centerInParent="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_total_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/me_black"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/font_size_huge"
+                        android:text="￥71,0300.00"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/me_gray"
+                        android:textSize="@dimen/font_size_fifteen"
+                        android:text="总资产 (元)"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <cn.hdmoney.hdy.view.SpotView
+                        android:layout_toLeftOf="@+id/hint1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:spot_color="@color/enable_money"/>
+
+                    <TextView
+                        android:id="@+id/hint1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="14dp"
+                        android:textColor="@color/me_gray"
+                        android:textSize="@dimen/font_size_fifteen"
+                        android:layout_marginLeft="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="可用余额"/>
+
+                    <TextView
+                        android:id="@+id/tv_enable_money"
+                        android:textColor="@color/me_gray"
+                        android:textSize="@dimen/font_size_huge"
+                        android:layout_toRightOf="@id/hint1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15000.00"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <cn.hdmoney.hdy.view.SpotView
+                        android:layout_toLeftOf="@+id/hint2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:spot_color="@color/frozen_money"/>
+
+                    <TextView
+                        android:id="@+id/hint2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="14dp"
+                        android:textColor="@color/me_gray"
+                        android:textSize="@dimen/font_size_fifteen"
+                        android:layout_marginLeft="24dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="冻结金额"/>
+
+                    <TextView
+                        android:id="@+id/tv_frozen_money"
+                        android:layout_toRightOf="@id/hint2"
+                        android:textColor="@color/me_gray"
+                        android:textSize="@dimen/font_size_huge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1500.00"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <cn.hdmoney.hdy.view.SpotView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_toLeftOf="@+id/hint3"
+                        app:spot_color="@color/in_money"/>
+
+                    <TextView
+                        android:id="@+id/hint3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="14dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/me_gray"
+                        android:textSize="@dimen/font_size_fifteen"
+                        android:layout_marginLeft="24dp"
+                        android:text="在投本金"/>
+
+                    <TextView
+                        android:id="@+id/tv_in_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/me_gray"
+                        android:textSize="@dimen/font_size_huge"
+                        android:layout_toRightOf="@id/hint3"
+                        android:text="1500.00"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ru.vang.progressswitcher.ProgressWidget>
+</LinearLayout>

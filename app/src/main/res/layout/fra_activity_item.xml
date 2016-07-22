@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_listviewitem_corner"
+        android:orientation="vertical">
+
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/img_activity"
+            android:layout_width="match_parent"
+            android:layout_height="137dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/activity_bg"
+            app:sriv_left_top_corner_radius="5dip"
+            app:sriv_right_top_corner_radius="5dip"
+
+            />
+        <!-- app:sriv_border_width="2dip"
+         app:sriv_border_color="#008fea"
+         app:sriv_oval="true"-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_listviewitem_corner"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/img_icon"
+                android:layout_width="92dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="14dp"
+                android:background="@mipmap/ing"
+                android:gravity="center"
+                android:text="正在进行"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_fifteen" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/spacing_normal"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="与好友分享得大奖"
+                    android:textColor="@color/me_gray"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016.07.04-201607.10"
+                    android:textColor="@color/btn_gray"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

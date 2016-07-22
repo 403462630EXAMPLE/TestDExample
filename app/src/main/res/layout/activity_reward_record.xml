@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="获奖记录"
+        app:left_text="返回"
+        app:left_show="icon"/>
+    <ru.vang.progressswitcher.ProgressWidget
+        android:id="@+id/progress_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:progressViewLayout="@layout/progress_switch_progress"
+        app:emptyViewLayout="@layout/progress_switch_empty">
+
+        <com.hdy.loadmorerecycleview.LoadMoreRecycleView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"/>
+    </ru.vang.progressswitcher.ProgressWidget>
+</LinearLayout>

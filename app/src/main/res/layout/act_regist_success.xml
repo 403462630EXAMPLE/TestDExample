@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="银行卡"
+        app:left_text="返回"
+        app:left_show="text"/>
+
+    <LinearLayout
+        android:id="@+id/ll_success_hint_ocntainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/title_bar"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_bug_success"/>
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            style="@style/FinancialBuySuccessTextStyle"
+            android:text="购买成功！"/>-->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_name_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ll_success_hint_ocntainer"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large"
+        style="@style/FinancialBuySuccessTextStyle"
+        android:text="您的认证资料已成功提交！/n 请耐心等待银联来电并完成认证，/n如认证失败，请冲洗提交资料。"/>
+
+
+</RelativeLayout>

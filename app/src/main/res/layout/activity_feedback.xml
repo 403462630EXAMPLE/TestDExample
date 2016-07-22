@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/me_bg_color"
+    android:orientation="vertical">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="意见反馈"
+        app:left_show="icon"
+        app:left_text="返回" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/me_white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/me_black"
+            android:textSize="@dimen/font_size_small"
+            android:text="选择反馈类型" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tv_type_1"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@drawable/text_color_feedback_type"
+                android:background="@drawable/bg_feedback_type"
+                android:text="咨询"/>
+
+            <TextView
+                android:id="@+id/tv_type_2"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@drawable/text_color_feedback_type"
+                android:background="@drawable/bg_feedback_type"
+                android:text="投诉"/>
+
+            <TextView
+                android:id="@+id/tv_type_3"
+                android:layout_width="70dp"
+                android:gravity="center"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@drawable/text_color_feedback_type"
+                android:background="@drawable/bg_feedback_type"
+                android:text="建议"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="horizontal"
+        android:background="@color/me_white"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="18dp"
+            android:textSize="@dimen/font_size_fifteen"
+            android:textColor="@color/me_black"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:background="@null"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:hint="请描述你的问题......"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/tv_content_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/font_size_eleven"
+            android:textColor="@color/me_light_gray"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:text="0/200"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:background="@color/me_white"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_commit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_round_purple_selector"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/me_white"
+        android:textSize="@dimen/font_size_big" />
+</LinearLayout>

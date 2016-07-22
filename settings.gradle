@@ -1,1 +1,2 @@
-include ':app'
+include ':app', ':library_pulltorefresh', ':FlycoBanner_Lib', ':library_aframework', ':library_mvp', ':superswiperefreshlayout', ':Togglebutton', ':LockPattern', ':CalendarCard', ':zxing_core', ':fczxing_core', ':LoadMoreRecycleView', ':pickerview'
+//include ':library_viewpagerheader'

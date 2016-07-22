@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_lighter"
+    >
+    <LinearLayout
+        android:id="@+id/ll_gonggao_nomessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="129dp"
+            android:layout_height="129dp"
+            android:background="@mipmap/no_message_bg"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:layout_marginTop="26.5dp"
+            android:textColor="@color/me_gray"
+            android:text="暂时无数据"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+    >
+    <!--android:divider="@color/gray_lighter"
+    android:dividerHeight="@dimen/spacing_small"-->
+    </ListView>
+</RelativeLayout>

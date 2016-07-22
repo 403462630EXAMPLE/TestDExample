@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lock_pattern_head_hint_color_regular">#bebebe</color>
+    <color name="lock_pattern_head_hint_color_error">#ff4f4f</color>
+
+    <color name="title_bar">#33A7FF</color>
+    <color name="action_bar_text_color">#f4f4f4</color>
+    <dimen name="font_size_left_action">14sp</dimen>
+    <dimen name="font_size_action_title">18sp</dimen>
+</resources>

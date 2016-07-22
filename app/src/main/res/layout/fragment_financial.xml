@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.hdmoney.hdy.fragment.FinancialFragment">
+
+    <cn.hdmoney.hdy.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bar_title="理财"
+        app:right_text="筛选"
+        app:left_show="none"
+        app:right_icon="@drawable/ic_filter_selector"
+        app:right_show="icon"/>
+
+    <ru.vang.progressswitcher.ProgressWidget
+        android:id="@+id/progress_widget"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:progressViewLayout="@layout/progress_switch_progress"
+        app:emptyViewLayout="@layout/progress_switch_empty">
+
+        <com.hdy.swuperereshlayout.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hdy.loadmorerecycleview.LoadMoreRecycleView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:clipToPadding="false"
+                android:background="#FFF1F1F1">
+
+            </com.hdy.loadmorerecycleview.LoadMoreRecycleView>
+        </com.hdy.swuperereshlayout.SwipeRefreshLayout>
+    </ru.vang.progressswitcher.ProgressWidget>
+</LinearLayout>
